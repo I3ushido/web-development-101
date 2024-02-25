@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road to Backend</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #register {
+      color: darkgray;
+      text-align: center;
+    }
+
+    .form {
+      border: 1px darkgray solid;
+      width: 100%;
+    }
+
+    .test-input {
+      border-color: whitesmoke;
+      background-color: whitesmoke;
+      border-bottom: 1px darkgray solid;
+      width: 100%;
+    }
+
+    .gender {
+      display: flex;
+    }
+
+    .header-form {
+      width: 100px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .form-input {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      border: 0px;
+      width: 100%;
+      height: 25px;
+      background-color: darkgray;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .message {
+      background-color: gray;
+      padding: 10px;
+      margin-bottom: 5px;
+      display: none;
+      text-align: center;
+    }
+
+    .message.success {
+      background-color: lightgreen;
+      display: block;
+    }
+
+    .message.danger {
+      background-color: lightcoral;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="user.html">go to user</a>
+  <h1 class="" id="register">Register form</h1>
+  <div>
+    <div class="flex form-input">
+      <div class="header-form ">Name</div>
+      <input class="form test-input" type="text" name="first_name" id="firstname">
+    </div>
+    <div class="flex  form-input ">
+      <div class="header-form">L-Name</div>
+      <input class="form test-input" type="text" name="last_name" id="lastname">
+    </div>
+    <div class="flex form-input ">
+      <div class="header-form ">Age</div>
+      <input class="form test-input" type="number " name="age" id="" min="0" max="99">
+    </div>
+  </div>
+  <div class="form-input"></div>
+  <div class="gender form-input">
+    <div class="header-form">Gender</div>
+    <div>
+      <input type="radio" name="gender" id="" value="male"> Male
+    </div>
+    <div>
+      <input type="radio" name="gender" id="" value="female"> Female
+    </div>
+    <div>
+      <input type="radio" name="gender" id="" value="na"> N/A
+    </div>
+  </div>
+  <!-- <hr> -->
+  <div class="form-input">
+    <div>Interests</div>
+    <div>
+      <input type="checkbox" name="interest" id="" value="coding"> Coding
+    </div>
+    <div>
+      <input type="checkbox" name="interest" id="" value="hacking"> Hacking
+    </div>
+    <div>
+      <input type="checkbox" name="interest" id="" value="gaming"> Gaming
+    </div>
+  </div>
+  <!-- <hr> -->
+  <div class="form-input">
+    <div class="">Description</div>
+    <div>
+      <textarea style="width: 100%" name="description" id="" cols="30" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="center form-input">
+    <a href="#">term & condition</a>
+  </div>
+  <div class="message" id="message">Message</div>
+  <button class="button" type="submit" onclick="submitData()">Submit</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
